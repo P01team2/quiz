@@ -1,9 +1,9 @@
 class Oblast {
 	int choise;
-	char name[10];
-	const char nameOfFile;
+	char name[11];
+	const char nameOfFile[11];
 public:
-	Oblast(int choiseF,char nameF,const char nameOfFileF = oblast.txt)
+	Oblast(int choiseF,char nameF,const char nameOfFileF = "oblast.txt")
 	{
 		choise = choiseF;
 		name = nameF;

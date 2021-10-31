@@ -141,6 +141,12 @@
   <ItemGroup>
     <ClCompile Include="quiz.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="quiz.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="oblast.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
