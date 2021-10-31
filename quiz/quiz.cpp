@@ -1,8 +1,10 @@
 ﻿#include <iostream>
-
+#include "quiz.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	Oblast a;
+	a.setChoise(5);
+	a.print();
 }
 
 
