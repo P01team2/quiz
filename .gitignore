@@ -31,3 +31,5 @@
 *.out
 *.app
 /.vs
+/quiz/.vs/Quiz/v16
+/quiz/Debug
