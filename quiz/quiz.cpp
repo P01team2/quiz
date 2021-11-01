@@ -3,7 +3,8 @@
 int main()
 {
 	Oblast a;
-	a.setChoise(5);
+	a.setChoise(2);
+	a.setName("nikita");
 	a.print();
 }
 
