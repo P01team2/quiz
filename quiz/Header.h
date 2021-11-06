@@ -26,6 +26,12 @@ public:
 		case 1:
 		case 2:
 		case 3:
+			cout << "ви обрали вийти з програми"<<endl;
+			cout << "щоб закрити консоль натисність enter ";
+			break;
+		default:
+			cout << "ви обрали невірну дію"<<endl;
+		cin >> choise;
 		}
 	}
 };
