@@ -24,6 +24,7 @@ public:
 		cin >> choise;
 		switch (choise) {
 		case 1:
+
 		case 2:
 		case 3:
 			cout << "ви обрали вийти з програми"<<endl;

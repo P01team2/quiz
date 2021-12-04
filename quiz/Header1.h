@@ -8,10 +8,11 @@ class Question {
 	string answer[4] = {"Відповідь 1 ","Відповідь 2 ","Відповідь 3 ","Відповідь 4"};
 	int Ans;
 	int TrueAns=1;
+	int NofQuestion = 1;
 	int i = 0;
 public:
 	void Print() {
-		cout << "\tПитання 1" <<endl;
+		cout << "\tПитання "<< NofQuestion <<endl;
 		cout << "" << endl;
 		cout <<"\t" << question << endl;
 		cout << "" << endl;
@@ -19,6 +20,7 @@ public:
 			cout <<"\t" << answer[i] << endl;
 			cout << "" << endl;
 		}
+		NofQuestion += 1;
 	}
 	void TrueA() {
 		cout << "Введіть номер відповіді" << endl;
