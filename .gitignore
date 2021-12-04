@@ -31,13 +31,6 @@
 *.out
 *.app
 /.vs
-/quiz/x64/Debug
 /quiz/.vs/Quiz/v16
-/quiz/Debug/quiz.tlog
-/quiz/Debug/vc142.pdb
-/quiz/Debug/vc142.idb
-/quiz/Debug/quiz.vcxproj.FileListAbsolute.txt
-/quiz/Debug/quiz.pdb
-/quiz/Debug/quiz.ilk
-/quiz/Debug/quiz.exe.recipe
-/quiz/Debug/Game.txt
+/quiz/Debug
+/quiz/x64/Debug
