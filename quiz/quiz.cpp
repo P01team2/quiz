@@ -12,18 +12,17 @@ int main()
 	
 	
 	if (fopen_s(&in, path, "r") == 0) {
-		cout << "ok";
 		while (!feof(in)) {
 			fscanf_s(in, "%d", &number);
 			fscanf_s(in, "%s", format, 100);
+	cout << number;
+	cout <<" " << format << "\n";
 		}
 	fclose(in);
 	}
 	else {
 		cout << "error";
 	}
-	cout << format<<"\n";
-	cout << number;
 }
 
 
