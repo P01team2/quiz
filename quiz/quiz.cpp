@@ -1,11 +1,20 @@
 ﻿#include <iostream>
 #include "quiz.h"
+#include "file.h"
+using namespace std;
+
 int main()
 {
+	setlocale(LC_ALL, "ru");
 	Oblast a;
-	a.setChoise(2);
-	a.setName("nikita");
+	Oblast b;
+	output();
+	cout << "\n";
+	
+	
 	a.print();
+	
+	
 }
 
 

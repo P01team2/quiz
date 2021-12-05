@@ -1,30 +1,39 @@
 #include <iostream>
 #include <string>
+using namespace std;
 class Oblast {
-	int choise;
-	std::string name;
-	std::string nameOfFile;
+	int number;
+	string name;
+	string nameOfFile;
 public:
-	Oblast(int choiseF,std::string nameF,const std::string nameOfFileF = "oblast.txt")
+	Oblast(int numberF,string nameF,const string nameOfFileF = "D:\\файл\\текст.txt")
 	{
-		choise = choiseF;
+		number = numberF;
 		name = nameF;
 		nameOfFile = nameOfFileF; 
 	}
-	Oblast() { choise=1; name = "name";nameOfFile = "oblast.txt"; }
-	void setChoise(int valueChoise) {
-		choise = valueChoise; 
+	Oblast() { number = 1; nameOfFile = "D:\\файл\\текст.txt";  }
+	void setChoise(int valuenumber) {
+		number = valuenumber;
 	}
-	void setName(std::string valueName) {
+	void setName(string valueName) {
 		name = valueName;
 	}
 	int getChoise() {
-		return choise;
+		return number;
 	}
-	std::string getName() {
+	string getName() {
 		return name;
 	}
+	void input() {
+		cout << "введите местоположение файла: ";
+		cin >> nameOfFile;
+		cout << "\n введите номер роздела знаний: ";
+		cin >> number;
+
+	}
 	void print() {
-		std::cout << choise << "   " << name << "    " << nameOfFile;
+		cout << number << "   \n" << name;;
 }
+
 };
