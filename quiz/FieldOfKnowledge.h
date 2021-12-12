@@ -28,12 +28,10 @@ public:
 	string getName() {
 		return name;
 	}
-	void input() {
-		cout << "введите местоположение файла: ";
-		cin >> nameOfFile;
+	int input() {
 		cout << "\n введите номер роздела знаний: ";
 		cin >> number;
-
+		return number;
 	}
 	void print() {
 		cout << number << "  " << name << "\n";

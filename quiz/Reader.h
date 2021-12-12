@@ -35,13 +35,19 @@ public:
 	static int ReadQuestions(Question array[], string questionsFileName) 
 	{
 		FILE* in;
-		const  char* path = "D:\\פאיכ\\films.txt";
+		//const  char* path = "D:\\פאיכ\\films.txt";
+		string path = ".\\Data\\" + questionsFileName+ ".txt"; // + questionsFileName + ".txt"
+		int rightAnswer = 0;
+	
+		
+		char* pathF = new char[path.length() + 1];
+		path.copy(pathF, path.size() + 1);
+		pathF[path.size()] = '\0';
 		char format[100];
 		char ch;
 		int count = 0;
-		int rightAnswer;
 
-		if (fopen_s(&in, path, "r") == 0) {
+		if (fopen_s(&in, pathF, "r") == 0) {
 			while (!feof(in)) {
 				Question object;
 				fscanf_s(in, "%c", &ch);

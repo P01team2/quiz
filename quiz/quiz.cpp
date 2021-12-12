@@ -21,6 +21,8 @@ int main()
 
 	// ToDo: select FieldOfKnowledge
 	int selectedNumber = 0;
+	FieldOfKnowledge num;
+	selectedNumber = num.input();
 	string selectedField = fieldsOfKnowledge[selectedNumber].getName();
 	
 	questionsCount = Reader::ReadQuestions(questions, selectedField);
