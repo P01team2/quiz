@@ -49,4 +49,12 @@
     <Text Include="Data\mems.txt" />
     <Text Include="Data\oblast.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Header1.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
