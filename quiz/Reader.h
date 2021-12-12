@@ -2,7 +2,7 @@
 #include <iostream>
 #include "FieldOfKnowledge.h"
 #include "question.h"
-	using namespace std;
+using namespace std;
 static class Reader
 {
 public:
@@ -32,15 +32,14 @@ public:
 		return count;
 	}
 
-	static int ReadQuestions(Question array[]) {
-
+	static int ReadQuestions(Question array[], string questionsFileName) 
+	{
 		FILE* in;
 		const  char* path = "D:\\פאיכ\\films.txt";
 		char format[100];
 		char ch;
 		int count = 0;
 		int rightAnswer;
-
 
 		if (fopen_s(&in, path, "r") == 0) {
 			while (!feof(in)) {
@@ -49,34 +48,18 @@ public:
 				fscanf_s(in, "%s", &format, 100);
 				string str = format;
 				object.question = str;
-				fscanf_s(in, "%c", &ch);
-				fscanf_s(in, "%s", &format, 100);
-				string str = format;
-				if(ch == '!') {
-					rightAnswer = 0;
+
+				for (int i = 0; i < 4; i++)
+				{
+					fscanf_s(in, "%c", &ch);
+					fscanf_s(in, "%s", &format, 100);
+					string str = format;
+					if (ch == '!') {
+						rightAnswer = i;
+					}
+					object.answers[i] = str;
 				}
-				object.answers[0] = str;
-				fscanf_s(in, "%c", &ch);
-				fscanf_s(in, "%s", &format, 100);
-				string str = format;
-				if (ch == '!') {
-					rightAnswer = 1;
-				}
-				object.answers[1] = str;
-				fscanf_s(in, "%c", &ch);
-				fscanf_s(in, "%s", &format, 100);
-				string str = format;
-				if (ch == '!') {
-					rightAnswer = 2;
-				}
-				object.answers[2] = str;
-				fscanf_s(in, "%c", &ch);
-				fscanf_s(in, "%s", &format, 100);
-				string str = format;
-				if (ch == '!') {
-					rightAnswer = 3;
-				}
-				object.answers[3] = str;
+
 				object.RightAnswers = rightAnswer;
 				array[count] = object;
 				count++;
