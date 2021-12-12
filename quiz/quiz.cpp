@@ -18,8 +18,9 @@ int main()
 		fieldsOfKnowledge[i].print();
 	}
 
-	string selectedField;
-	// select 	FieldOfKnowledge
+	// ToDo: select FieldOfKnowledge
+	int selectedNumber = 0;
+	string selectedField = fieldsOfKnowledge[selectedNumber].getName();
 
 	questionsCount = Reader::ReadQuestions(questions, selectedField);
 	
@@ -27,6 +28,11 @@ int main()
 	{
 		//questions[i].print();
 	}
+
+	// ToDo: show random question
+	// ToDo: show anwers randomized
+	// ToDo: input answer number
+	// ToDo: show correct or not
 	
 }
 
