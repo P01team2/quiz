@@ -43,18 +43,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="films.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
-    <Text Include="games.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
-    <Text Include="history.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
-    <Text Include="mems.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
     <Text Include="Data\films.txt" />
     <Text Include="Data\games.txt" />
     <Text Include="Data\history.txt" />

@@ -151,15 +151,21 @@
     <ClInclude Include="Reader.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Data\films.txt" />
-    <Text Include="Data\games.txt" />
-    <Text Include="Data\history.txt" />
-    <Text Include="Data\mems.txt" />
-    <Text Include="Data\oblast.txt" />
-    <Text Include="films.txt" />
-    <Text Include="games.txt" />
-    <Text Include="history.txt" />
-    <Text Include="mems.txt" />
+    <Text Include="Data\films.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\games.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\history.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\mems.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\oblast.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
