@@ -8,16 +8,25 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	FieldOfKnowledge fieldsOfKnowledge[10];
-	int count;
-	count = Reader::ReadFieldsOfKnowledge(fieldsOfKnowledge);
+	Question questions[100];
+	int fieldsCount;
+	int questionsCount;
+	fieldsCount = Reader::ReadFieldsOfKnowledge(fieldsOfKnowledge);
 	cout << "\n";
-	for (int i = 0; i < count; i++) {
-	fieldsOfKnowledge[i].print();
-	
+	for (int i = 0; i < fieldsCount; i++)
+	{
+		fieldsOfKnowledge[i].print();
 	}
+
+	string selectedField;
+	// select 	FieldOfKnowledge
+
+	questionsCount = Reader::ReadQuestions(questions, selectedField);
 	
-	
-	
+	for (int i = 0; i < questionsCount; i++)
+	{
+		//questions[i].print();
+	}
 	
 }
 
