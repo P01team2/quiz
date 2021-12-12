@@ -29,7 +29,7 @@ public:
 		Ans = Ans - 1;
 		if (Ans == RightAnswers) {
 			cout << "Ви правильно відповіли" << endl;
-			counter++;
+			
 		}
 		else {
 			cout << "Відповідь невірна" << endl;
