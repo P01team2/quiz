@@ -2,6 +2,7 @@
 #include "FieldOfKnowledge.h"
 #include "read.h"
 #include "Reader.h"
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -21,14 +22,14 @@ int main()
 	// ToDo: select FieldOfKnowledge
 	int selectedNumber = 0;
 	string selectedField = fieldsOfKnowledge[selectedNumber].getName();
-
-	questionsCount = Reader::ReadQuestions(questions, selectedField);
 	
-	for (int i = 0; i < questionsCount; i++)
-	{
+	questionsCount = Reader::ReadQuestions(questions, selectedField);
+	for (int i = 0; i < questionsCount; i++) {
+		int randN = rand() % questionsCount;
+		questions[randN].Print();
+		questions[randN].TrueA();
 		//questions[i].print();
 	}
-
 	// ToDo: show random question
 	// ToDo: show anwers randomized
 	// ToDo: input answer number
