@@ -151,7 +151,10 @@
     <ClInclude Include="Reader.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="oblast.txt" />
+    <Text Include="films.txt" />
+    <Text Include="games.txt" />
+    <Text Include="history.txt" />
+    <Text Include="mems.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

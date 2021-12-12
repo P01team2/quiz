@@ -43,6 +43,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="oblast.txt" />
+    <Text Include="films.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="games.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="history.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="mems.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>
