@@ -22,7 +22,7 @@ int main()
 	// ToDo: select FieldOfKnowledge
 	int selectedNumber = 0;
 	FieldOfKnowledge num;
-	selectedNumber = num.input();
+	selectedNumber = num.input()-1;
 	string selectedField = fieldsOfKnowledge[selectedNumber].getName();
 	
 	questionsCount = Reader::ReadQuestions(questions, selectedField);

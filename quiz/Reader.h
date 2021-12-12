@@ -9,7 +9,7 @@ public:
 	static int ReadFieldsOfKnowledge(FieldOfKnowledge array[]) {
 
 		FILE* in;
-		const  char* path = "D:\\файл\\текст.txt";
+		const  char* path = ".\\Data\\oblast.txt";
 		char format[100];
 		int number;
 		int count = 0;

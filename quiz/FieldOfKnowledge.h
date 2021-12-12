@@ -8,13 +8,13 @@ class FieldOfKnowledge {
 	string nameOfFile;
 
 public:
-	FieldOfKnowledge(int numberF, string nameF, const string nameOfFileF = "D:\\файл\\текст.txt")
+	FieldOfKnowledge(int numberF, string nameF, const string nameOfFileF = ".\\Data\\oblast.txt")
 	{
 		number = numberF;
 		name = nameF;
 		nameOfFile = nameOfFileF;
 	}
-	FieldOfKnowledge() { number = 1; nameOfFile = "D:\\файл\\текст.txt"; }
+	FieldOfKnowledge() { number = 1; nameOfFile = ".\\Data\\oblast.txt"; }
 	FieldOfKnowledge(const FieldOfKnowledge& obj) { number = obj.number; name = obj.name; nameOfFile = obj.nameOfFile; }
 	void setChoise(int valuenumber) {
 		number = valuenumber;
