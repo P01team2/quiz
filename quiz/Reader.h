@@ -35,7 +35,8 @@ public:
 	static int ReadQuestions(Question array[], string questionsFileName) 
 	{
 		FILE* in;
-		const  char* path = "D:\\פאיכ\\films.txt";
+		//const  char* path = "D:\\פאיכ\\films.txt";
+		const  char* path = ".\\Data\\"; // + questionsFileName + ".txt"
 		char format[100];
 		char ch;
 		int count = 0;
