@@ -139,7 +139,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FieldOfKnowledge.cpp" />
+    <ClCompile Include="question.cpp" />
     <ClCompile Include="quiz.cpp" />
+    <ClCompile Include="Reader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FieldOfKnowledge.h" />
+    <ClInclude Include="question.h" />
+    <ClInclude Include="quiz.h" />
+    <ClInclude Include="Reader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\films.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\games.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\history.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\mems.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="Data\oblast.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
