@@ -45,7 +45,7 @@ public:
 		path.copy(pathF, path.size() + 1);
 		pathF[path.size()] = '\0';
 		const int maxLength = 250;
-		char format[maxLength];
+		char bufer[maxLength];
 		char ch;
 		int count = 0;
 
@@ -53,23 +53,23 @@ public:
 			while (!feof(in)) {
 				Question object;
 				fscanf_s(in, "%c", &ch);
-				fgets(format, maxLength, in);
-				if (format[strlen(format) - 1] == '\n')
+				fgets(bufer, maxLength, in);
+				if (bufer[strlen(bufer) - 1] == '\n')
 				{
-					format[strlen(format) - 1] = '\0';
+					bufer[strlen(bufer) - 1] = '\0';
 				}
-				string str = format;
+				string str = bufer;
 				object.question = str;
 
 				for (int i = 0; i < 4; i++)
 				{
 					fscanf_s(in, "%c", &ch);
-					fgets(format, maxLength, in);
-					if (format[strlen(format) - 1] == '\n')
+					fgets(bufer, maxLength, in);
+					if (bufer[strlen(bufer) - 1] == '\n')
 					{
-						format[strlen(format) - 1] = '\0';
+						bufer[strlen(bufer) - 1] = '\0';
 					}
-					string str = format;
+					string str = bufer;
 					if (ch == '!') {
 						rightAnswer = i;
 					}

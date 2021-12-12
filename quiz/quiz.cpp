@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "ru");
+	
 	FieldOfKnowledge fieldsOfKnowledge[10];
 	Question questions[100];
 	int fieldsCount;
@@ -19,7 +20,7 @@ int main()
 		fieldsOfKnowledge[i].print();
 	}
 
-	// ToDo: select FieldOfKnowledge
+	
 	int selectedNumber = 0;
 	FieldOfKnowledge num;
 	selectedNumber = num.input()-1;
@@ -30,12 +31,10 @@ int main()
 		int randN = rand() % questionsCount;
 		questions[randN].Print();
 		questions[randN].TrueA();
-		//questions[i].print();
+	
 	}
-	// ToDo: show random question
-	// ToDo: show anwers randomized
-	// ToDo: input answer number
-	// ToDo: show correct or not
+
+
 	
 }
 
