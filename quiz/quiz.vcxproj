@@ -139,10 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FieldOfKnowledge.cpp" />
+    <ClCompile Include="question.cpp" />
     <ClCompile Include="quiz.cpp" />
+    <ClCompile Include="Reader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FieldOfKnowledge.h" />
+    <ClInclude Include="question.h" />
     <ClInclude Include="quiz.h" />
+    <ClInclude Include="Reader.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="oblast.txt" />
