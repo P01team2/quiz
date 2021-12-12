@@ -55,5 +55,10 @@
     <Text Include="mems.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="Data\films.txt" />
+    <Text Include="Data\games.txt" />
+    <Text Include="Data\history.txt" />
+    <Text Include="Data\mems.txt" />
+    <Text Include="Data\oblast.txt" />
   </ItemGroup>
 </Project>

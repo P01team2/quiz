@@ -151,6 +151,11 @@
     <ClInclude Include="Reader.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Data\films.txt" />
+    <Text Include="Data\games.txt" />
+    <Text Include="Data\history.txt" />
+    <Text Include="Data\mems.txt" />
+    <Text Include="Data\oblast.txt" />
     <Text Include="films.txt" />
     <Text Include="games.txt" />
     <Text Include="history.txt" />
