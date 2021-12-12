@@ -37,7 +37,7 @@ public:
 		FILE* in;
 		//const  char* path = "D:\\פאיכ\\films.txt";
 		string path = ".\\Data\\" + questionsFileName+ ".txt"; // + questionsFileName + ".txt"
-
+		int rightAnswer = 0;
 	
 		
 		char* pathF = new char[path.length() + 1];
@@ -46,7 +46,6 @@ public:
 		char format[100];
 		char ch;
 		int count = 0;
-		int rightAnswer;
 
 		if (fopen_s(&in, pathF, "r") == 0) {
 			while (!feof(in)) {

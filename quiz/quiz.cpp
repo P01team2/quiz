@@ -25,7 +25,7 @@ int main()
 	string selectedField = fieldsOfKnowledge[selectedNumber].getName();
 
 	questionsCount = Reader::ReadQuestions(questions, selectedField);
-	
+
 	for (int i = 0; i < questionsCount; i++)
 	{
 		//questions[i].print();
