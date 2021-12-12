@@ -10,7 +10,8 @@ public:
 
 		FILE* in;
 		const  char* path = ".\\Data\\oblast.txt";
-		char format[100];
+		const int maxLength = 250;
+		char format[maxLength];
 		int number;
 		int count = 0;
 		
@@ -18,7 +19,7 @@ public:
 		if (fopen_s(&in, path, "r") == 0) {
 			while (!feof(in)) {
 				fscanf_s(in, "%d", &number);
-				fscanf_s(in, "%s", &format, 100);
+				fscanf_s(in, "%s", &format, maxLength);
 				string str = format;
 				FieldOfKnowledge object(number, str);
 				array[count] = object;
@@ -43,7 +44,8 @@ public:
 		char* pathF = new char[path.length() + 1];
 		path.copy(pathF, path.size() + 1);
 		pathF[path.size()] = '\0';
-		char format[100];
+		const int maxLength = 250;
+		char format[maxLength];
 		char ch;
 		int count = 0;
 
@@ -51,14 +53,22 @@ public:
 			while (!feof(in)) {
 				Question object;
 				fscanf_s(in, "%c", &ch);
-				fscanf_s(in, "%s", &format, 100);
+				fgets(format, maxLength, in);
+				if (format[strlen(format) - 1] == '\n')
+				{
+					format[strlen(format) - 1] = '\0';
+				}
 				string str = format;
 				object.question = str;
 
 				for (int i = 0; i < 4; i++)
 				{
 					fscanf_s(in, "%c", &ch);
-					fscanf_s(in, "%s", &format, 100);
+					fgets(format, maxLength, in);
+					if (format[strlen(format) - 1] == '\n')
+					{
+						format[strlen(format) - 1] = '\0';
+					}
 					string str = format;
 					if (ch == '!') {
 						rightAnswer = i;
