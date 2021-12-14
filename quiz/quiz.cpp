@@ -1,36 +1,41 @@
 ﻿#include <iostream>
-#include <Windows.h>
-#include "Header.h"
-#include "Header1.h"
+#include "FieldOfKnowledge.h"
+#include "read.h"
+#include "Reader.h"
+#include <cstdlib>
 using namespace std;
+
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-	FILE* in;
-	const  char* path = "D:\\файл\\текст.txt";
-	char format[100];
-	int number;
+	setlocale(LC_ALL, "ru");
 	
+	FieldOfKnowledge fieldsOfKnowledge[10];
+	Question questions[100];
+	int fieldsCount;
+	int questionsCount;
+	fieldsCount = Reader::ReadFieldsOfKnowledge(fieldsOfKnowledge);
+	cout << "\n";
+	for (int i = 0; i < fieldsCount; i++)
+	{
+		fieldsOfKnowledge[i].print();
+	}
+
 	
-	if (fopen_s(&in, path, "r") == 0) {
-		while (!feof(in)) {
-			fscanf_s(in, "%d", &number);
-			fscanf_s(in, "%s", format, 100);
-	cout << number;
-	cout <<" " << format << "\n";
-		}
-	fclose(in);
+	int selectedNumber = 0;
+	FieldOfKnowledge num;
+	selectedNumber = num.input()-1;
+	string selectedField = fieldsOfKnowledge[selectedNumber].getName();
+	
+	questionsCount = Reader::ReadQuestions(questions, selectedField);
+	for (int i = 0; i < questionsCount; i++) {
+		int randN = rand() % questionsCount;
+		questions[randN].Print();
+		questions[randN].TrueA();
+	
 	}
-	else {
-		cout << "error";
-	}
-    SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-/*	Info StartMessage;
-	StartMessage.print();
-*/
-	Question q;
-	q.Print();
-	q.TrueA();
+
+
+	
 }
+
+
